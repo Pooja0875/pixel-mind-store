@@ -1,29 +1,73 @@
 # 🛍️ Pixel Mind Store
 
-A responsive e-commerce demo app built with **Next.js**, **React Query**, **Zustand**, and **Tailwind CSS** (or custom CSS). Supports product browsing, admin product management, and cart simulation.
+**Pixel Mind Store** is a sleek, responsive e-commerce frontend built with **Next.js**, **Zustand**, **React Query**, and **CSS Modules**. It offers product browsing, cart management, and a secure admin panel to manage custom products.
+
+---
 
 ## 🔗 Live Demo
 
-👉 [Live Website](https://your-vercel-link.vercel.app)  
-👉 [GitHub Repository](https://github.com/YOUR_USERNAME/pixel-mind-store)
+> [Visit the Live Site](https://your-vercel-deployment-url.vercel.app)
 
-## 💡 Features
+---
 
-- 🔍 Product Search & Category Filter
-- 🧺 Add to Cart + Slide-out Cart Drawer
-- 🔐 Admin Login to Add/Delete Products
-- ✅ Payment (UI Only)
-- 💻 Fully Responsive UI
-- ⚙️ FakeStoreAPI + Local Storage Support
+## ✨ Features
 
-## 🚀 Getting Started
+### 🛒 For Customers
+- Browse products from [FakeStoreAPI](https://fakestoreapi.com/)
+- Search & filter products by category
+- Add products to cart
+- View cart in a floating side drawer
+- View product details in a floating popup
 
-### 1. Clone the Repository
+### 🔐 For Admins
+- Secure login with password (local validation)
+- Add new products (stored in localStorage)
+- Delete existing locally added products
+- Session timeout after 30 minutes of inactivity
+
+---
+
+## 🧰 Tech Stack
+
+- **Next.js** 15
+- **React** 18
+- **Zustand** – State management
+- **React Query** – API fetching
+- **CSS Modules** – Styling
+- **Vercel** – Deployment
+
+---
+
+## 🚀 How to Run Locally
 
 ```bash
 git clone https://github.com/Pooja0875/pixel-mind-store.git
 cd pixel-mind-store
+npm install
+npm run dev
 
-🔐 Admin Access
-Go to /admin-login
+🔐 Admin Login
+Navigate to: /admin-login
+
 Password: admin123
+
+After login, you'll be redirected to the Admin Panel where you can:
+
+➕ Add new product
+
+🗑️ Delete existing locally added product
+
+
+📁 Folder Structure
+pixel-mind-store/
+├── components/
+├── pages/
+├── public/
+├── store/           # Zustand global store
+├── styles/
+├── README.md
+
+🙌 Acknowledgements
+FakeStoreAPI – Dummy product data
+
+Vercel – Deployment platform
