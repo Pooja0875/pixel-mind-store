@@ -1,73 +1,76 @@
 # 🛍️ Pixel Mind Store
 
-**Pixel Mind Store** is a sleek, responsive e-commerce frontend built with **Next.js**, **Zustand**, **React Query**, and **CSS Modules**. It offers product browsing, cart management, and a secure admin panel to manage custom products.
+A fully responsive e-commerce frontend built with **Next.js**, **TypeScript**, **CSS Modules**, and **Zustand**. It integrates product filtering, a floating cart drawer, and admin features to add or delete local products.
 
 ---
 
-## 🔗 Live Demo
+### 🌐 Live Demo
 
-> [Visit the Live Site](https://your-vercel-deployment-url.vercel.app)
-
----
-
-## ✨ Features
-
-### 🛒 For Customers
-- Browse products from [FakeStoreAPI](https://fakestoreapi.com/)
-- Search & filter products by category
-- Add products to cart
-- View cart in a floating side drawer
-- View product details in a floating popup
-
-### 🔐 For Admins
-- Secure login with password (local validation)
-- Add new products (stored in localStorage)
-- Delete existing locally added products
-- Session timeout after 30 minutes of inactivity
+🔗 [Visit Pixel Mind Store](https://your-vercel-url.vercel.app)
 
 ---
 
-## 🧰 Tech Stack
+### 📦 Features
 
-- **Next.js** 15
-- **React** 18
-- **Zustand** – State management
-- **React Query** – API fetching
-- **CSS Modules** – Styling
-- **Vercel** – Deployment
+- 🔍 **Search + Category Filtering**
+- 🛒 **Cart Drawer with Zustand**
+- 💳 **Payment UI with QR Code**
+- 📱 **Fully Responsive Design**
+- 🔄 **Persistent Cart (localStorage)**
+- 💾 **Local Product Storage (Admin)**
+- ⚙️ **Admin Login with Expiry (30 mins)**
 
 ---
 
-## 🚀 How to Run Locally
+### 🔐 Admin Panel
+
+Go to `/admin-login` and enter this password to access admin functions:
+admin123
+
+
+#### ✅ Admin Actions
+
+- ➕ Add New Product
+- 🗑️ Delete Locally Added Products  
+  (including products from previous sessions)
+
+---
+
+### 🛠️ Tech Stack
+
+- **Next.js 15**
+- **TypeScript**
+- **Zustand (Global Store)**
+- **CSS Modules**
+- **FakeStoreAPI**
+- **localStorage + session routing**
+
+---
+
+### 🚀 Getting Started
 
 ```bash
-git clone https://github.com/Pooja0875/pixel-mind-store.git
+git clone https://github.com/YOUR_USERNAME/pixel-mind-store.git
 cd pixel-mind-store
 npm install
 npm run dev
 
-🔐 Admin Login
-Navigate to: /admin-login
 
-Password: admin123
+🛡️ Notes
+Only products added by admin can be deleted.
 
-After login, you'll be redirected to the Admin Panel where you can:
+Cart and local products are stored in localStorage.
 
-➕ Add new product
+Images use next/image and support remote hosts like:
 
-🗑️ Delete existing locally added product
+fakestoreapi.com
+
+i.imgur.com
+
+gstatic.com
+
+qrserver.com
 
 
-📁 Folder Structure
-pixel-mind-store/
-├── components/
-├── pages/
-├── public/
-├── store/           # Zustand global store
-├── styles/
-├── README.md
-
-🙌 Acknowledgements
-FakeStoreAPI – Dummy product data
-
-Vercel – Deployment platform
+👨‍💻 Author
+Created by Pooja0875
