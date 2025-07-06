@@ -6,7 +6,7 @@ A fully responsive e-commerce frontend built with **Next.js**, **TypeScript**, *
 
 ### 🌐 Live Demo
 
-🔗 [Visit Pixel Mind Store](https://your-vercel-url.vercel.app)
+🔗 [Visit Pixel Mind Store](https://pixel-mind-store.netlify.app/)
 
 ---
 
@@ -50,7 +50,7 @@ admin123
 ### 🚀 Getting Started
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/pixel-mind-store.git
+git clone https://github.com/Pooja0875/pixel-mind-store.git
 cd pixel-mind-store
 npm install
 npm run dev
