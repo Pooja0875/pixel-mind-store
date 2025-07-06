@@ -30,9 +30,9 @@ export default function BrowsePage() {
     );
 
     const localProductsRaw = localStorage.getItem("localProducts");
-    const localProducts = localProductsRaw ? JSON.parse(localProductsRaw) : [];
+    const localAddedProducts = localProductsRaw ? JSON.parse(localProductsRaw) : [];
 
-    const combined = [...localProducts, ...apiProducts]; // local first
+    const combined = [...localAddedProducts, ...apiProducts];
     setProducts(combined);
     setFiltered(combined);
   };

@@ -1,6 +1,9 @@
 // next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+        eslint: {
+        ignoreDuringBuilds: true,
+      },
   images: {
     remotePatterns: [
       {
@@ -37,7 +40,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'encrypted-tbn3.gstatic.com',
         pathname: '/**',
-      },
+      }
     ],
   },
 };

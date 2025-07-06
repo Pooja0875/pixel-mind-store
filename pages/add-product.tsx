@@ -2,10 +2,20 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import AddProductForm from "../components/AddProductForm";
 
+type Product = {
+  id: number | string;
+  title: string;
+  price: number;
+  description: string;
+  image: string;
+  category: string;
+};
+
+
 export default function AddProductPage() {
   const [isAdmin, setIsAdmin] = useState(false);
   const [view, setView] = useState("none"); // 'add' or 'delete'
-  const [localProducts, setLocalProducts] = useState<any[]>([]);
+  const [localProducts, setLocalProducts] = useState<Product[]>([]);
   const router = useRouter();
 
   useEffect(() => {
