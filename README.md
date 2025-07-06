@@ -1,76 +1,80 @@
 # 🛍️ Pixel Mind Store
 
-A fully responsive e-commerce frontend built with **Next.js**, **TypeScript**, **CSS Modules**, and **Zustand**. It integrates product filtering, a floating cart drawer, and admin features to add or delete local products.
+**Pixel Mind Store** is a modern e-commerce frontend application built using **Next.js** and **TypeScript**. It allows users to browse products, add items to a cart, and for admins to manage products (add or delete locally). Product data comes from the FakeStore API and user-added local storage.
+
+## 🚀 Live Demo
+
+🔗 [Click here to view the live site](https://app.netlify.com/projects/pixel-mind-store/)  
+
+
+## 📦 Features
+
+- 🛒 Browse and add products to cart
+- 🔍 Search and filter by product category
+- 🧑‍💼 Admin login for product management
+- ➕ Add new products (stored locally)
+- 🗑️ Delete locally added products
+- 🖼️ Product detail popup with image
+- 🧠 Zustand for global state management
 
 ---
 
-### 🌐 Live Demo
+## ⚙️ Setup Instructions
 
-🔗 [Visit Pixel Mind Store](https://pixel-mind-store.netlify.app/)
+### Prerequisites
 
----
+Make sure you have the following installed:
 
-### 📦 Features
+- Node.js (v18 or higher recommended)
+- npm
 
-- 🔍 **Search + Category Filtering**
-- 🛒 **Cart Drawer with Zustand**
-- 💳 **Payment UI with QR Code**
-- 📱 **Fully Responsive Design**
-- 🔄 **Persistent Cart (localStorage)**
-- 💾 **Local Product Storage (Admin)**
-- ⚙️ **Admin Login with Expiry (30 mins)**
-
----
-
-### 🔐 Admin Panel
-
-Go to `/admin-login` and enter this password to access admin functions:
-admin123
-
-
-#### ✅ Admin Actions
-
-- ➕ Add New Product
-- 🗑️ Delete Locally Added Products  
-  (including products from previous sessions)
-
----
-
-### 🛠️ Tech Stack
-
-- **Next.js 15**
-- **TypeScript**
-- **Zustand (Global Store)**
-- **CSS Modules**
-- **FakeStoreAPI**
-- **localStorage + session routing**
-
----
-
-### 🚀 Getting Started
+### Clone and Run Locally
 
 ```bash
-git clone https://github.com/Pooja0875/pixel-mind-store.git
+git clone https://github.com/your-username/pixel-mind-store.git
 cd pixel-mind-store
 npm install
 npm run dev
 
+Then visit http://localhost:3000
 
-🛡️ Notes
-Only products added by admin can be deleted.
+🔐 Admin Access
+To access the admin panel:
 
-Cart and local products are stored in localStorage.
+Go to /admin-login
 
-Images use next/image and support remote hosts like:
+Use the password: admin123
 
-fakestoreapi.com
+Admin panel includes:
 
-i.imgur.com
+➕ Add New Product
 
-gstatic.com
+🗑️ Delete Existing Product (added locally)
 
-qrserver.com
+⚠️ Admin session expires after 30 minutes.
 
+🧱 Tech Stack
+Next.js
 
-👨‍💻 Author
-Created by Pooja0875
+TypeScript
+
+Zustand
+
+FakeStore API
+
+[CSS Modules] or [Tailwind CSS]
+
+📁 Folder Structure
+bash
+Copy code
+/components       → Reusable UI components
+/pages            → Next.js pages (e.g., browse, admin-login)
+/store            → Zustand store for global state
+/styles           → CSS Modules
+/public           → Public assets
+
+Recommended build settings:
+
+Build Command: npm run build
+
+Publish Directory: .next
